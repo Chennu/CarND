@@ -1,8 +1,21 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+<img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
+
+Overview
+---
+
+When we drive, we use our eyes to decide where to go.  The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle.  Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.
+
+In this project we will detect lane lines in images using Python Modules (MatPlotLib, Numpy, MoviePy and IPython) and OpenCV.  
+
+* OpenCV means "Open-Source Computer Vision", which is a package that has many useful tools for analyzing images.
+* MoviePy is a Python module for video editing, which can be used for basic Operations (like custs, concatenations, title insertions), Video Composing (a.k.a. non-linear editing), Video Processing or create advanced effects.
+* MatPlotLib is a Python 2D plotting library which produces pulication quality figures in a variety of hardcopy formats and interactive environments across platforms. 
+* Numpy is the fundamental package for scientific computing with Python.
+* IPython means "Interactive Python" is a command shell for interactive computing in multiple prgoramming launguages, Originally developed for the Python Programming.
 
 ---
 
