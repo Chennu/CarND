@@ -36,25 +36,27 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 8 steps. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+1. Extracted blue channel from a color image.
+2. Added noise to the image by using gaussian with kernel of size 5. 
+3. Detected edges using canny edge detection algorithm.
+4. Applied a mask to the image with edges to eliminate not important regions.
+5. Extracted lines using hough line detection algorithm.
+6. Determined slopes of lane lines by averaging and separting left/right line segments.
+7. Extrapolated lane lines.
+8. Drawn lane lines on the original image.
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+1. Several times the detected lane lines are unstable - fluctuating value of line slope. 
+2. Hardcoded values for region of interest and all parameters.
+3. Variable performance on different light/weather conditions.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+1. Adaptive parameter values.
+2. Smooth out lane lines (kalman filter)
